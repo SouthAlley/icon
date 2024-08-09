@@ -1,6 +1,7 @@
 name: Generate Multiple Icons JSON
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'Airport/**/*.{png,jpg}'
