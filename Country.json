@@ -1,0 +1,78 @@
+{
+  "name": "Country",
+  "description": "GitHub: @cc63",
+  "icons": [
+    {
+      "name": "AU.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/AU.png"
+    },
+    {
+      "name": "CA.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/CA.png"
+    },
+    {
+      "name": "CN.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/CN.png"
+    },
+    {
+      "name": "DE.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/DE.png"
+    },
+    {
+      "name": "FR.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/FR.png"
+    },
+    {
+      "name": "HK.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/HK.png"
+    },
+    {
+      "name": "JP.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/JP.png"
+    },
+    {
+      "name": "KR.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/KR.png"
+    },
+    {
+      "name": "MO.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/MO.png"
+    },
+    {
+      "name": "RU.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/RU.png"
+    },
+    {
+      "name": "SG.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/SG.png"
+    },
+    {
+      "name": "TH.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/TH.png"
+    },
+    {
+      "name": "TR.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/TR.png"
+    },
+    {
+      "name": "TW.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/TW.png"
+    },
+    {
+      "name": "UK.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/UK.png"
+    },
+    {
+      "name": "UN.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/UN.png"
+    },
+    {
+      "name": "US.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/US.png"
+    },
+    {
+      "name": "VN.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Country/VN.png"
+    }
+  ]
+}

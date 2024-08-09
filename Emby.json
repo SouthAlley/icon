@@ -1,0 +1,30 @@
+{
+  "name": "Emby",
+  "description": "GitHub: @cc63",
+  "icons": [
+    {
+      "name": "HXD.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/HXD.png"
+    },
+    {
+      "name": "JMS.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/JMS.png"
+    },
+    {
+      "name": "Nm2.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Nm2.png"
+    },
+    {
+      "name": "Nya1.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Nya1.png"
+    },
+    {
+      "name": "Shu2.png",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Shu2.png"
+    },
+    {
+      "name": "Ing.jpg",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Ing.jpg"
+    }
+  ]
+}
