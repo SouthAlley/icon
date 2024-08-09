@@ -1,0 +1,49 @@
+name: Generate Multiple Icons JSON
+
+on:
+  push:
+    paths:
+      - 'Airport/**/*.{png,jpg}'
+      - 'Country/**/*.{png,jpg}'
+      - 'Emby/**/*.{png,jpg}'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install jq
+      run: sudo apt-get install -y jq
+
+    - name: Get repository and branch information
+      id: repo-info
+      run: |
+        REPO=$(echo "${GITHUB_REPOSITORY}" | cut -d '/' -f 2)
+        echo "REPO_NAME=${REPO}" >> $GITHUB_ENV
+        BRANCH=$(echo "${GITHUB_REF#refs/heads/}")
+        echo "BRANCH_NAME=${BRANCH}" >> $GITHUB_ENV
+
+    - name: Generate icons.json files
+      run: |
+        declare -a ICONS_PATHS=("Airport" "Country" "Emby")
+        for path in "${ICONS_PATHS[@]}"; do
+          ICONS_JSON="{\"name\": \"${path^}\", \"description\": \"GitHub: @cc63\", \"icons\": []}"
+          for icon in ${path}/*.{png,jpg}; do
+            [ -e "$icon" ] || continue # 跳过不存在的文件模式
+            ICON_NAME=$(basename "$icon")
+            ICON_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${BRANCH_NAME}/$icon"
+            ICONS_JSON=$(echo "$ICONS_JSON" | jq --arg name "$ICON_NAME" --arg url "$ICON_URL" '.icons += [{"name": $name, "url": $url}]')
+          done
+          echo "$ICONS_JSON" > "${path}.json"
+        done
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add *.json
+        git commit -m "Update icons JSON files" -a || echo "No changes to commit"
+        git push
