@@ -1,6 +1,6 @@
 {
   "name": "Emby",
-  "description": "GitHub: @cc63",
+  "description": "GitHub:",
   "icons": [
     {
       "name": "HXD.png",
@@ -25,6 +25,18 @@
     {
       "name": "Ing.jpg",
       "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Ing.jpg"
+    },
+    {
+      "name": "Heisi.JPG",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Heisi.JPG"
+    },
+    {
+      "name": "Loser.JPG",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/Loser.JPG"
+    },
+    {
+      "name": "YSCT.JPG",
+      "url": "https://raw.githubusercontent.com/SouthAlley/icon/main/Emby/YSCT.JPG"
     }
   ]
 }
